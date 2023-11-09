@@ -2,9 +2,7 @@ package com.example.demo;
 
 import javafx.application.Application;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -19,9 +17,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.*;
-import java.net.URL;
+import java.nio.file.Files;
+
 
 public class HelloApplication extends Application {
     private TableView<DataModel> tableView = new TableView<>();
@@ -31,16 +29,10 @@ public class HelloApplication extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
-        URL fxmlUrl = getClass().getResource("sample.fxml");
-        if (fxmlUrl == null) {
-            System.out.println("FXML file not found.");
-        } else {
-            System.out.println("FXML file found: " + fxmlUrl.getPath());
-            Parent root = FXMLLoader.load(fxmlUrl);
-            primaryStage.setScene(new Scene(root));
-            primaryStage.setTitle("Excel Parser App");
-        }
+    public void start(Stage primaryStage) {
+
+        primaryStage.setTitle("Excel Parser App");
+
 
         TableColumn<DataModel, String> emailColumn = new TableColumn<>("Пошта");
         emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
@@ -138,7 +130,7 @@ public class HelloApplication extends Application {
             }
 
             // Збереження в файл
-            try (OutputStream fileOut = new FileOutputStream(new File(directory, "workbook.xlsx"))) {
+            try (OutputStream fileOut = Files.newOutputStream(new File(directory, "workbook.xlsx").toPath())) {
                 workbook.write(fileOut);
             }
 
