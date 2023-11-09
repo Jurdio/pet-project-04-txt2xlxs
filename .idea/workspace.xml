@@ -9,8 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c11b669-e726-4b38-b80e-f1175f89b18a" name="Changes" comment="add GUI and parse logig from file">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4c11b669-e726-4b38-b80e-f1175f89b18a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Screenshot_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +75,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dima\Desktop\Education\4 курс\ООП\demo\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dima\Desktop\pars" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="ExcelParserApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -124,7 +131,7 @@
       <workItem from="1699438217316" duration="4588000" />
       <workItem from="1699460433283" duration="621000" />
       <workItem from="1699462052417" duration="2163000" />
-      <workItem from="1699521579081" duration="126000" />
+      <workItem from="1699521579081" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1699361841675</created>
@@ -147,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699462167959</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update gitignore">
+      <created>1699521741314</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699521741314</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor: delete useless file and import">
+      <created>1699522077021</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699522077021</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +185,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -195,6 +216,8 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="add GUI and parse logig from file" />
     <MESSAGE value="fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
+    <MESSAGE value="update gitignore" />
+    <MESSAGE value="refactor: delete useless file and import" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: delete useless file and import" />
   </component>
 </project>
