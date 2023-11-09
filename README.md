@@ -6,7 +6,7 @@ Firstly, you need a file with .txt and format [email] [password] [recovery email
 
 ![txt2xlsx File](Screenshot_3.png)
 
-Then, you can choose your file and it will be displayed in table
+Then you can choose your file, it will be displayed in table and save in your directory
 
 ![txt2xlsx Demo](Screenshot_2.png)
 
